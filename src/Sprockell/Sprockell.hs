@@ -212,7 +212,7 @@ load ldCode (immval,aluOutput,memval,reply) = case (ldCode, reply) of
         (LdInp, Just rx) -> rx
         (LdInp, Nothing) -> 0
 
-        (_    , Just rx) -> error ("Sprockell ignored a system response of value: " ++ show rx)
+        (_    , Just rx) -> error ("Sprockell ignored a system response of value: " ++ show rx ++ ". Are you sure each global memory instruction (e.g. ReadInstr or TestAndSet) is followed by a Receive instruction?")
 
 -- =====================================================================================
 -- store: to store data in local memory
