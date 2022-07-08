@@ -16,9 +16,9 @@ regPC         = regbankSize + 1                      -- register for program cou
 
 -- defines the number of registers excluding the stack pointer & program counter
 regbankSize   =  8   :: Int
-localMemSize  = 64   :: Int
+localMemSize  = 80   :: Int
 
-shMemSize     =  64   :: Int
+shMemSize     =  16   :: Int
 channelDelay  =  4   :: Int
 
 
